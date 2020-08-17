@@ -1,0 +1,54 @@
+.pattern {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+   background-size: 100%;
+   font-family: 'Comic Neue', cursive;
+   font-size: 20px;
+  }
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .gallery__photo-full {
+    margin-bottom: 12px;
+  }
+  
+  .gallery__photo-full img {
+    display: block;
+  }
+  
+  .gallery__photo-previews {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    width: 550px;
+    padding: 0;
+    justify-content: space-between;
+  }
+  
+  .gallery__photo-preview {
+    padding: 0;
+    border: 0;
+    border-radius:0;
+    background: none;
+  }
+  
+  .gallery__photo-preview:hover,
+  .gallery__photo-preview:focus {
+    opacity: 0.4;
+  }
+  
+  .gallery__photo-preview img {
+    display: block;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .gallery__photo-preview--active img {
+    outline: 10px solid blue;
+    outline-offset: -10px;
+  }
+  
